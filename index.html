@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.1/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <title>White Board</title>
+</head>
+<body>
+    <!-- Tool bar -->
+    <div class="top-bar">
+        <!-- active tool -->
+        
+        <div class="active-tool">
+            
+            <span id="active-tool" title="Active Tool">Brush</span>
+        </div>
+        <!-- brush -->
+        <div class="brush tool">
+           
+            <i class="fas fa-brush" id="brush" title="Brush"></i>
+            <input type="text" class="jscolor" value="a51dab" id="brush-color">
+            <span class="size" id="brush-size" title="Brush Size">10</span>       
+            <input type="range" min="1" max="50" value="10" class="slider" id="brush-slider">
+        </div>
+      
+        <!-- eraser -->
+        <div class="tool">
+            <i class="fas fa-eraser" id="eraser" title="Eraser"></i>
+        </div>
+        <!-- clear canvas -->
+        <div class="tool">
+            <i class="fas fa-undo-alt" id="clear-canvas" title="clear"></i>
+        </div>
+       
+        <!-- download image -->
+        <div class="tool">
+            <a id="download">
+                <i class="fas fa-download" title="Save Image File"></i>
+            </a>
+        </div>
+    </div>
+   
+    <script src="js/jscolor.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
